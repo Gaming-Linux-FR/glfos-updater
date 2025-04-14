@@ -1,0 +1,13 @@
+[Desktop Entry]
+Name=GLF-OS Updater
+GenericName=Updater
+X-GNOME-FullName=GLF-OS Updater
+Comment=Update your System
+Exec=pkexec glfos-updater
+Icon=glfos-logo
+Terminal=false
+Type=Application
+Categories=GNOME;System;
+Keywords=System;
+StartupNotify=true
+StartupWMClass=org.glfos.updater

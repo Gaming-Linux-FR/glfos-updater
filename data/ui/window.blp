@@ -1,0 +1,96 @@
+using Gtk 4.0;
+using Adw 1;
+using Gio 2.0;
+
+template $MainWindow: Adw.ApplicationWindow {
+  title: _("GLF-OS Updater");
+  default-width: 300;
+  default-height: 600;
+
+  content: Box {
+    orientation: vertical;
+    Adw.ToolbarView {
+        [top]
+        Adw.HeaderBar header_bar {}
+    }
+
+    Adw.Banner rebuild-banner {
+      title: _("Please wait while your system is being rebuilt...");
+      styles ['warning']
+    }
+
+    Adw.Banner rebuild-error-banner {
+      title: _("An error happened while rebuilding your system. Be aware and check your nix configuration !");
+      styles ['error']
+    }
+
+    Adw.Banner rebuild-done-banner {
+      title: _("Your system was successfully updated! Please make sure to reboot.");
+
+      button-label: _("Reboot");
+      button-clicked => $reboot();
+      
+      styles ['success color']
+    }
+    
+    Box {
+      orientation: vertical;
+      margin-start: 20;
+      margin-end: 20;
+      margin-top: 10;
+      margin-bottom: 10;
+      hexpand: true;
+      vexpand: true;
+      halign: center;
+      valign: center;
+      spacing: 50;
+
+      Box {
+        halign: center;
+
+        Picture logo {
+          height-request: 128;
+        }
+      }
+
+      Box {
+        orientation: vertical;
+        halign: center;
+        vexpand: true;
+        spacing: 30;
+
+        Label {
+          label: _("Time to update your system!");
+          styles ['title-3']
+        }
+
+        Box {
+          orientation: vertical;
+          spacing: 10;
+
+          Label {
+            label: _("Please choose a branch");
+            styles ["heading"]
+          }
+
+          DropDown branches {
+            halign: center;
+          }
+        }
+
+        Button update-btn {
+          halign: center;
+
+          Adw.ButtonContent {
+            icon-name: "system-run-symbolic";
+            label: _("Update the system");
+          }
+
+          clicked => $on_update();
+
+          styles ["suggested-action", "pill"]
+        }
+      }
+    }
+  };
+}

@@ -1,0 +1,29 @@
+#!/usr/bin/env python3
+
+import os
+import sys
+import locale
+import gettext
+
+pkgdatadir = '@PKGDATA_DIR@'
+localedir = '@LOCALE_DIR@'
+
+gettext.install('glfos-updater', localedir)
+
+locale.bindtextdomain('glfos-updater', localedir)
+locale.textdomain('glfos-updater')
+
+
+if __name__ == '__main__':
+    import gi
+
+    gi.require_version('Gtk', '4.0')
+    gi.require_version('Adw', '1')
+
+    from gi.repository import Gio
+    resource = Gio.Resource.load(
+        os.path.join(pkgdatadir, 'glfos-updater.gresource'))
+    Gio.Resource._register(resource)
+
+    from glfosupdater import main
+    sys.exit(main.main())

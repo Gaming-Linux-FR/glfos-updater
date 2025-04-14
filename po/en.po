@@ -1,0 +1,64 @@
+# English translations for glfos-updater package.
+# Copyright (C) 2025 THE glfos-updater'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the glfos-updater package.
+# Automatically generated, 2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: glfos-updater\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-04-14 12:16+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: data/ui/window.blp:6
+msgid "GLF-OS Updater"
+msgstr "GLF-OS Updater"
+
+#: data/ui/window.blp:18
+msgid "Please wait while your system is being rebuilt..."
+msgstr ""
+
+#: data/ui/window.blp:23
+msgid ""
+"An error happened while rebuilding your system. Be aware and check your nix "
+"configuration !"
+msgstr ""
+
+#: data/ui/window.blp:28
+msgid "Your system was successfully updated! Please make sure to reboot."
+msgstr ""
+
+#: data/ui/window.blp:30
+msgid "Reboot"
+msgstr ""
+
+#: data/ui/window.blp:63
+msgid "Time to update your system!"
+msgstr ""
+
+#: data/ui/window.blp:72
+msgid "Please choose a branch"
+msgstr ""
+
+#: data/ui/window.blp:86
+msgid "Update the system"
+msgstr ""
+
+#: glfosupdater/views/main_window.py:29
+msgid "stable (advised)"
+msgstr ""
+
+#: glfosupdater/views/main_window.py:30
+msgid "rolling (for the cutting-edge enjoyers)"
+msgstr ""
+
+#, fuzzy
+#~ msgid "Update"
+#~ msgstr "Update"
