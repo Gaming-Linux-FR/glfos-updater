@@ -1,0 +1,35 @@
+using Gtk 4.0;
+using Adw 1;
+
+template $WelcomeDialogWelcome: Box {
+    orientation: vertical;
+    hexpand: true;
+    vexpand: true;
+    valign: center;
+    halign: center;
+    spacing: 50;
+
+    Box {
+      valign: center;
+      halign: center;
+      Picture logo {
+        height-request: 128;
+      }
+    }
+    
+    Box {
+      orientation: vertical;
+      valign: center;
+      spacing: 5;
+
+      Label {
+        label: _("Welcome on GLF-OS Updater.");
+        styles ['heading']
+      }
+
+      Label {
+        label: _("It's time to discover our new experiences !");
+        styles ['body']
+      }
+    }
+}

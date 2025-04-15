@@ -1,10 +1,9 @@
 using Gtk 4.0;
 using Adw 1;
-using Gio 2.0;
 
 template $MainWindow: Adw.ApplicationWindow {
   title: _("GLF-OS Updater");
-  default-width: 300;
+  default-width: 600;
   default-height: 600;
 
   content: Box {
@@ -60,7 +59,7 @@ template $MainWindow: Adw.ApplicationWindow {
         spacing: 30;
 
         Label {
-          label: _("Time to update your system!");
+          label: _("Time to make a choice!");
           styles ['title-3']
         }
 
@@ -69,7 +68,7 @@ template $MainWindow: Adw.ApplicationWindow {
           spacing: 10;
 
           Label {
-            label: _("Please choose a branch");
+            label: _("Please choose your experience");
             styles ["heading"]
           }
 

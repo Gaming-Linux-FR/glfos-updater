@@ -1,0 +1,28 @@
+using Gtk 4.0;
+using Adw 1;
+
+template $WelcomeDialogRolling: Box {
+    orientation: vertical;
+    hexpand: true;
+    vexpand: true; 
+
+      Label {
+        margin-top: 20;
+        valign: start;
+        label: _("Meet GLF-OS rolling");
+        styles ['title-2']
+      }
+
+      Label {
+        margin-start: 50;
+        margin-end: 50;
+        valign: center;
+        vexpand: true;
+        justify: center;
+        width-request: 100;
+        max-width-chars: 25;
+        wrap: true;
+        label: _("The finest cutting-edge experience!\n\nThis version is constantly updated, which makes it ideal to test the latest features and ensure compatibility with new hardware. It's a choice for experienced and advanced users, who are aware that problematic bugs or \"rebuilds\" may happen temporarily.");
+        styles ['body']
+      }
+}

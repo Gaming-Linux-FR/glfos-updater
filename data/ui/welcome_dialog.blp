@@ -1,0 +1,63 @@
+using Gtk 4.0;
+using Adw 1;
+
+template $WelcomeDialog: Adw.Dialog {
+  can-close: true;
+  follows-content-size: false;
+  content-height: 500;
+  content-width: 600;
+
+  Box {
+    margin-start: 15;
+    margin-end: 15;
+    orientation: horizontal;
+
+    Overlay {
+        [overlay]
+        Box {
+            valign: center;
+            Button prev-btn {
+                Adw.ButtonContent {
+                    icon-name: 'go-previous-symbolic';
+                }
+
+                sensitive: false;
+                visible: true;
+
+                clicked => $prev_page();
+                styles ['suggested-action', 'circular']
+            }
+        }
+
+        Box {
+            vexpand: true;
+            orientation: vertical;
+
+            Adw.Carousel content {
+                page-changed => $page_changed();
+            }
+
+            Adw.CarouselIndicatorDots {
+                valign: end;
+                halign: center;
+                carousel: content;
+                margin-bottom: 5;
+            }
+        }
+
+        [overlay]
+        Box {
+            valign: center;
+            halign: end;
+
+            Button next-btn {
+                Adw.ButtonContent {
+                    icon-name: 'go-next-symbolic';
+                }
+                clicked => $next_page();
+                styles ['suggested-action', 'circular']
+            }
+        }
+    }
+  }
+}

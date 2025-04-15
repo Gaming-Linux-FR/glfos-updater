@@ -2,5 +2,10 @@
 <gresources>
   <gresource prefix="/org/glfos/Updater">
     <file preprocess="xml-stripblanks">window.ui</file>
+    <file preprocess="xml-stripblanks">welcome_dialog.ui</file>
+    <file preprocess="xml-stripblanks">welcome_dialog_welcome.ui</file>
+    <file preprocess="xml-stripblanks">welcome_dialog_stable.ui</file>
+    <file preprocess="xml-stripblanks">welcome_dialog_rolling.ui</file>
+    <file preprocess="xml-stripblanks">welcome_dialog_start.ui</file>
   </gresource>
 </gresources>

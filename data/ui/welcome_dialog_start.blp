@@ -1,0 +1,46 @@
+using Gtk 4.0;
+using Adw 1;
+
+template $WelcomeDialogStart: Box {
+    orientation: vertical;
+    hexpand: true;
+    vexpand: true; 
+
+    Label {
+        margin-top: 20;
+        valign: start;
+        label: _("Ready?");
+        styles ['title-2']
+    }
+
+    Box {
+        orientation: vertical;
+        vexpand: true;
+        valign: center;
+        halign: center;
+        spacing: 20;
+
+        Label {
+            label: _("Please note that making an experience choice is mandatory.\n Without it, you won't be able to receive the new features of GLF-OS.\n Staying on your current system version will not be supported.");
+            margin-start: 50;
+            margin-end: 50;
+            wrap: true;
+            justify: center;
+
+            styles ['body']
+        }
+
+        Button {
+            halign: center;
+            clicked => $start();
+
+            Adw.ButtonContent {
+                icon-name: 'go-next-symbolic';
+                label: _("Make your choice");
+            }
+
+            styles ['suggested-action', 'pill']
+        }
+    }
+    
+}

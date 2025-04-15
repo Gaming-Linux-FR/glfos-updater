@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: glfos-updater\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-04-14 12:16+0200\n"
+"POT-Creation-Date: 2025-04-15 14:23+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -17,45 +17,98 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: data/ui/window.blp:6
+#: data/ui/window.blp:5
 msgid "GLF-OS Updater"
 msgstr "GLF-OS Updater"
 
-#: data/ui/window.blp:18
+#: data/ui/window.blp:17
 msgid "Please wait while your system is being rebuilt..."
 msgstr ""
 
-#: data/ui/window.blp:23
+#: data/ui/window.blp:22
 msgid ""
 "An error happened while rebuilding your system. Be aware and check your nix "
 "configuration !"
 msgstr ""
 
-#: data/ui/window.blp:28
+#: data/ui/window.blp:27
 msgid "Your system was successfully updated! Please make sure to reboot."
 msgstr ""
 
-#: data/ui/window.blp:30
+#: data/ui/window.blp:29
 msgid "Reboot"
 msgstr ""
 
-#: data/ui/window.blp:63
-msgid "Time to update your system!"
+#: data/ui/window.blp:62
+msgid "Time to make a choice!"
 msgstr ""
 
-#: data/ui/window.blp:72
-msgid "Please choose a branch"
+#: data/ui/window.blp:71
+msgid "Please choose your experience"
 msgstr ""
 
-#: data/ui/window.blp:86
+#: data/ui/window.blp:85
 msgid "Update the system"
 msgstr ""
 
-#: glfosupdater/views/main_window.py:29
-msgid "stable (advised)"
+#: data/ui/welcome_dialog_welcome.blp:26
+#, fuzzy
+msgid "Welcome on GLF-OS Updater."
+msgstr "GLF-OS Updater"
+
+#: data/ui/welcome_dialog_welcome.blp:31
+msgid "It's time to discover our new experiences !"
 msgstr ""
 
-#: glfosupdater/views/main_window.py:30
+#: data/ui/welcome_dialog_stable.blp:12
+msgid "Meet GLF-OS stable"
+msgstr ""
+
+#: data/ui/welcome_dialog_stable.blp:25
+msgid ""
+"The optimal version of GLF-OS, a perfect mix between fresh packages and "
+"stability.\n"
+"\n"
+"We make use of all NixOS abilities to provide you a reliable system for "
+"daily use. Enjoy the best of both worlds: gaming packages receive all the "
+"latest new features while the whole system evolve through major steps every "
+"6 months, ensuring a solid and well-tested base."
+msgstr ""
+
+#: data/ui/welcome_dialog_rolling.blp:12
+msgid "Meet GLF-OS rolling"
+msgstr ""
+
+#: data/ui/welcome_dialog_rolling.blp:25
+msgid ""
+"The finest cutting-edge experience!\n"
+"\n"
+"This version is constantly updated, which makes it ideal to test the latest "
+"features and ensure compatibility with new hardware. It's a choice for "
+"experienced and advanced users, who are aware that problematic bugs or "
+"\"rebuilds\" may happen temporarily."
+msgstr ""
+
+#: data/ui/welcome_dialog_start.blp:12
+msgid "Ready?"
+msgstr ""
+
+#: data/ui/welcome_dialog_start.blp:24
+msgid ""
+"Please note that making an experience choice is mandatory.\n"
+" Without it, you won't be able to receive the new features of GLF-OS.\n"
+" Staying on your current system version will not be supported."
+msgstr ""
+
+#: data/ui/welcome_dialog_start.blp:38
+msgid "Make your choice"
+msgstr ""
+
+#: glfosupdater/views/main_window.py:31
+msgid "stable (recommended)"
+msgstr ""
+
+#: glfosupdater/views/main_window.py:32
 msgid "rolling (for the cutting-edge enjoyers)"
 msgstr ""
 

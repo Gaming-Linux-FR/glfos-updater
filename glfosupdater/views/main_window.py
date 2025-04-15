@@ -1,6 +1,8 @@
 from glfosupdater.constants import rootdir, pkgdatadir
 from gi.repository import Gtk, Adw
 
+from glfosupdater.views import welcome_dialog
+
 import os
 
 @Gtk.Template(resource_path = rootdir +'/window.ui')
@@ -26,8 +28,10 @@ class MainWindow(Adw.ApplicationWindow):
         branches = Gtk.StringList()
         self.branches_dropdown.props.model = branches
 
-        branches.append(_("stable (advised)"))
+        branches.append(_("stable (recommended)"))
         branches.append(_("rolling (for the cutting-edge enjoyers)"))
+
+        welcome_dialog.WelcomeDialog().present(self)
 
     @Gtk.Template.Callback()
     def on_update(self, target):

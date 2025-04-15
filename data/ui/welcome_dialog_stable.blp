@@ -1,0 +1,28 @@
+using Gtk 4.0;
+using Adw 1;
+
+template $WelcomeDialogStable: Box {
+    orientation: vertical;
+    hexpand: true;
+    vexpand: true; 
+
+      Label {
+        margin-top: 20;
+        valign: start;
+        label: _("Meet GLF-OS stable");
+        styles ['title-2']
+      }
+
+      Label {
+        margin-start: 50;
+        margin-end: 50;
+        valign: center;
+        vexpand: true;
+        justify: center;
+        width-request: 100;
+        max-width-chars: 25;
+        wrap: true;
+        label: _("The optimal version of GLF-OS, a perfect mix between fresh packages and stability.\n\nWe make use of all NixOS abilities to provide you a reliable system for daily use. Enjoy the best of both worlds: gaming packages receive all the latest new features while the whole system evolve through major steps every 6 months, ensuring a solid and well-tested base.");
+        styles ['body']
+      }
+}

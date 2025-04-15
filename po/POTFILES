@@ -1,2 +1,7 @@
 data/ui/window.blp
+data/ui/welcome_dialog.blp
+data/ui/welcome_dialog_welcome.blp
+data/ui/welcome_dialog_stable.blp
+data/ui/welcome_dialog_rolling.blp
+data/ui/welcome_dialog_start.blp
 glfosupdater/views/main_window.py
