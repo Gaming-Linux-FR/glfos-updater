@@ -22,8 +22,8 @@ msgid "GLF-OS Updater"
 msgstr "Gestionnaire de mise à jour GLF-OS"
 
 #: data/ui/window.blp:17
-msgid "Please wait while your system is being rebuilt..."
-msgstr "Veuillez patienter le temps que votre système soit reconstruit..."
+msgid "Please wait while your system is being rebuilt... Your system will reboot once it's done."
+msgstr "Veuillez patienter le temps que votre système soit reconstruit... Votre système redémarrera quand ce sera terminé."
 
 #: data/ui/window.blp:22
 msgid ""
