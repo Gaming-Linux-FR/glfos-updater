@@ -11,7 +11,7 @@ class App(Adw.Application):
         GLib.set_application_name('GLF-OS Updater')
         GLib.set_prgname('glfos-updater')
 
-        self.nix_rebuild_cmd = 'nixos-rebuild switch && reboot'
+        self.nix_rebuild_cmd = 'nixos-rebuild switch; reboot'
         self.flake_file = '/etc/nixos/flake.nix'
 
     def do_activate(self):
