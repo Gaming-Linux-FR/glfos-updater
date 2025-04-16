@@ -22,7 +22,7 @@ msgid "GLF-OS Updater"
 msgstr "GLF-OS Updater"
 
 #: data/ui/window.blp:17
-msgid "Please wait while your system is being rebuilt... Your system will reboot once it's done."
+msgid "Please wait while your system is being rebuilt..."
 msgstr ""
 
 #: data/ui/window.blp:22
